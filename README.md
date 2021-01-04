@@ -12,9 +12,9 @@
 
 下图为Eureka系统架构：
 
-![Eureka系统架构](D:\ideaProject\SpringCloudAlibaba\pics\eureka架构.png)
+![Eureka系统架构](pics\eureka架构.png)
 
-![Dubbo系统架构](D:\ideaProject\SpringCloudAlibaba\pics\dubbo架构.png)
+![Dubbo系统架构](pics\dubbo架构.png)
 
 ### 3、Eureka包含两个组件：Eureka Server 和 Eureka Client
 
@@ -32,7 +32,7 @@
 
 ### 5、Eureka集群原理
 
-![Eureka集群原理](D:\ideaProject\SpringCloudAlibaba\pics\Eureka集群原理.png)
+![Eureka集群原理](pics\Eureka集群原理.png)
 
 ### 6、Eureka自我保护模式
 
