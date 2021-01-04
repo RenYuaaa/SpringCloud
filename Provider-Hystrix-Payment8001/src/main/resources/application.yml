@@ -1,0 +1,40 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: PROVIDER-HYSTRIX-PAYMENT
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://39.107.94.251:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+
+eureka:
+  client:
+    # 表示是否将自己注册到Eureka Server，默认为true
+    register-with-eureka: true
+    # 是否从Eureka Server 抓取已有的注册信息，默认为true。单节点无所谓。集群必须设置为true才能Ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址
+      # 注册中心集群指向所有注册中心地址
+      #      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+      # 单机注册中心指向一个地址
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    # Eureka中显示的实例名称
+    instance-id: provider-hystrix-payment8001
+    # Eureka中访问路径可以显示IP地址
+    prefer-ip-address: true
+    # Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认为30秒）
+    # lease-renewal-interval-in-seconds: 20
+    # Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒（默认为90秒），超时将剔除服务
+    # lease-expiration-duration-in-seconds: 60
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  # 所有entity别名类所在包
+  type-aliases-package: com.springcloud.provider.entity
+

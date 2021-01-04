@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Eureka-2" />
+        <module name="Common" />
+        <module name="Feign-Consumer-Order" />
+        <module name="Consumer-Hystrix-Dashboard9001" />
+        <module name="Eureka" />
+        <module name="Consumer-Feign-Hystrix-Order80" />
+        <module name="Consumer-Order" />
+        <module name="Provider-Payment8002" />
+        <module name="Provider-Payment8001" />
+        <module name="Provider-Hystrix-Payment8001" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
