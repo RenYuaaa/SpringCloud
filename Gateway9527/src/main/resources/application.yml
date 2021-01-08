@@ -3,24 +3,36 @@ server:
 
 spring:
   application:
-    name: CLOUD-GATEWAY
+    name: cloud-gateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          # 开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          enabled: true
       routes:
-        - id: payment_routh                   #路由的ID，没有固定规则但要求唯一，建议配合服务名
-          uri: http://localhost:8001          #匹配后提供服务的路由地址
+        # 路由的ID，没有固定规则但要求唯一，建议配合服务名
+        - id: payment_routh
+          # 匹配后提供服务的路由地址
+#          uri: http://localhost:8001
+          uri: lb://PROVIDER-PAYMENT
           predicates:
-            - Path=/api/payment/get/**        # 断言，路径相匹配的进行路由
+            # 断言，路径相匹配的进行路由
+            - Path=/api/payment/get/**
 
-        - id: payment_routh2                  #路由的ID，没有固定规则但要求唯一，建议配合服务名
-          uri: http://localhost:8001          #匹配后提供服务的路由地址
+        # 路由的ID，没有固定规则但要求唯一，建议配合服务名
+        - id: payment_routh2
+          # 匹配后提供服务的路由地址
+#          uri: http://localhost:8001
+          uri: lb://PROVIDER-PAYMENT
           predicates:
+            # 断言，路径相匹配的进行路由
             - Path=/api/payment/loadbalance/**
 
 
 eureka:
   instance:
-    hostname: CLOUD-GATEWAY-SERVICE
+    instance-id: gateway-service
   client:
     # 表示是否将自己注册到Eureka Server，默认为true
     register-with-eureka: true
