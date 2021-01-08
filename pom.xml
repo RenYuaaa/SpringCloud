@@ -20,6 +20,7 @@
         <module>Provider-Hystrix-Payment8001</module>
         <module>Consumer-Feign-Hystrix-Order80</module>
         <module>Consumer-Hystrix-Dashboard9001</module>
+        <module>Gateway9527</module>
     </modules>
 
     <!-- jar包版本管理 -->

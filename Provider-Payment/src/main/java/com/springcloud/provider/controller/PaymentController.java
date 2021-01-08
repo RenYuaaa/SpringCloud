@@ -1,6 +1,5 @@
 package com.springcloud.provider.controller;
 
-import com.mysql.jdbc.TimeUtil;
 import com.springcloud.common.entity.Payment;
 import com.springcloud.common.result.CommonStatus;
 import com.springcloud.common.result.Result;
@@ -22,7 +21,6 @@ import java.util.concurrent.TimeUnit;
  * @desc :
  */
 @RestController
-@RequestMapping("/api/payment")
 public class PaymentController {
     private static final Logger logger = LoggerFactory.getLogger(PaymentController.class);
 
@@ -33,14 +31,14 @@ public class PaymentController {
     @Resource
     private DiscoveryClient discoveryClient;
 
-    @PostMapping("/create")
+    @PostMapping("/api/payment/create")
     public Result<Integer> create(@RequestBody Payment payment) {
         Integer id = paymentService.create(payment);
         logger.info("服务端口号为：{}", serverPort);
         return new Result<>(CommonStatus.SUCCESS, id);
     }
 
-    @GetMapping("/get/{id}")
+    @GetMapping("/api/payment/get/{id}")
     public Result<Payment> getPaymentById(@PathVariable("id") Integer id) {
         Payment payment = paymentService.getPaymentById(id);
         logger.info("服务端口号为：{}", serverPort);
@@ -48,7 +46,7 @@ public class PaymentController {
     }
 
 
-    @GetMapping("/discovery")
+    @GetMapping("/api/payment/discovery")
     public Object discovery() {
 
         //第一种方式
@@ -62,12 +60,12 @@ public class PaymentController {
         return this.discoveryClient;
     }
 
-    @GetMapping("/loadbalance")
+    @GetMapping("/api/payment/loadbalance")
     public String getPaymentLoadBalance() {
         return serverPort;
     }
 
-    @GetMapping("/timeout")
+    @GetMapping("/api/payment/timeout")
     public String paymentFeignTimeOut() {
         try {
             TimeUnit.SECONDS.sleep(3);
