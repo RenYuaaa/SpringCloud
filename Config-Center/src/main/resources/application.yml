@@ -1,0 +1,40 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    # 注册金Eureka服务器的微服务名
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          # github上面的git仓库名字
+          uri: https://github.com/RenYuaaa/SpringCloud-Config
+          # 读取分支
+          label: master
+          # 搜索目录
+          search-paths:
+            - SpringCloud-Config
+          # 账户
+          username: ren812848195@163.com
+          # 密码
+          password: woainia.0315
+  rabbitmq:
+    host: 106.54.95.100
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+# RabbitMQ相关配置，暴漏bus刷新配置的端点
+management:
+  # 暴漏bus书信配置的端点
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'

@@ -6,17 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Eureka-2" />
         <module name="Provider-Hystrix-Payment8001" />
         <module name="Common" />
-        <module name="Gateway9527" />
-        <module name="Feign-Consumer-Order" />
-        <module name="Eureka" />
-        <module name="Consumer-Feign-Hystrix-Order80" />
+        <module name="Config-Client3355" />
+        <module name="Consumer-Hystrix-Dashboard9001" />
         <module name="Consumer-Order" />
         <module name="Provider-Payment8002" />
         <module name="Provider-Payment8001" />
-        <module name="Consumer-Hystrix-Dashboard9001" />
+        <module name="Config-Client3366" />
+        <module name="Gateway9527" />
+        <module name="Consumer-Feign-Hystrix-Order80" />
+        <module name="Config-Center" />
+        <module name="Eureka-2" />
+        <module name="Feign-Consumer-Order" />
+        <module name="Eureka" />
       </profile>
     </annotationProcessing>
   </component>

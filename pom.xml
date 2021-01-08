@@ -21,6 +21,9 @@
         <module>Consumer-Feign-Hystrix-Order80</module>
         <module>Consumer-Hystrix-Dashboard9001</module>
         <module>Gateway9527</module>
+        <module>Config-Center</module>
+        <module>Config-Client3355</module>
+        <module>Config-Client3366</module>
     </modules>
 
     <!-- jar包版本管理 -->
