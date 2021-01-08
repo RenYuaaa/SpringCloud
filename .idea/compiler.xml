@@ -15,10 +15,12 @@
         <module name="Provider-Payment8001" />
         <module name="Config-Client3366" />
         <module name="Gateway9527" />
+        <module name="RabbitMQ-Provider-8801" />
         <module name="Consumer-Feign-Hystrix-Order80" />
         <module name="Config-Center" />
         <module name="Eureka-2" />
         <module name="Feign-Consumer-Order" />
+        <module name="RabbitMQ-Consumer-8802" />
         <module name="Eureka" />
       </profile>
     </annotationProcessing>

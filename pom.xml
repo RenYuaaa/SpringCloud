@@ -24,6 +24,8 @@
         <module>Config-Center</module>
         <module>Config-Client3355</module>
         <module>Config-Client3366</module>
+        <module>RabbitMQ-Provider-8801</module>
+        <module>RabbitMQ-Consumer-8802</module>
     </modules>
 
     <!-- jar包版本管理 -->
