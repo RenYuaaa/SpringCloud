@@ -21,13 +21,18 @@ spring:
                 password: guest
       bindings:
         # 这个名字是一个通道的名称
-        iutput:
+        input:
           # 表示要使用的Exchange名称定义
           destination: studyExchange
           # 设置消息类型，本次为json，文本则设置为"test/plain"
           content-type: application/json
           # 设置要绑定的消息服务的具体设置
           binder: defaultRabbit
+  rabbitmq:
+    host: 106.54.95.100
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:

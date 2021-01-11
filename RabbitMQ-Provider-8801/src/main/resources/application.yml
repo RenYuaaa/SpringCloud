@@ -11,14 +11,14 @@ spring:
         defaultRabbit:
           # 消息组件类型
           type: rabbit
-          # 设置rabbitMQ的相关环境配置
-          environment:
-            spring:
-              rabbitmq:
-                host: 106.54.95.100
-                port: 5672
-                username: guest
-                password: guest
+          # 设置rabbitMQ的相关环境配置（这样rabbitmq连接不上，所以将rabbitmq的配置放在外面）
+#          environment:
+#            spring:
+#              rabbitmq:
+#                host: 106.54.95.100
+#                port: 5672
+#                username: guest
+#                password: guest
       bindings:
         # 这个名字是一个通道的名称
         output:
@@ -28,6 +28,11 @@ spring:
           content-type: application/json
           # 设置要绑定的消息服务的具体设置
           binder: defaultRabbit
+  rabbitmq:
+    host: 106.54.95.100
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
