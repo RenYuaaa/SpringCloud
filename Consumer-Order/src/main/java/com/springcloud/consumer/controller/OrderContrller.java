@@ -27,6 +27,10 @@ import java.util.List;
 public class OrderContrller {
     private static final Logger logger = LoggerFactory.getLogger(OrderContrller.class);
 
+    /**
+     * 要使用服务名进行负载的话，需要在ApplicationContextConfig中增加@LoadBalance注解
+     * 需要使用ribbon
+     */
     private static final String PAYMENT_URL = "http://PROVIDER-PAYMENT";
 
     private static final String SERVICE_NAME = "PROVIDER-PAYMENT";
@@ -34,7 +38,7 @@ public class OrderContrller {
     @Resource
     private RestTemplate restTemplate;
     /**
-     * 自己些的负载均衡
+     * 自己写的负载均衡
      */
     @Resource
     private LoadBalancer loadBalancer;
@@ -71,5 +75,10 @@ public class OrderContrller {
         ServiceInstance serviceInstance = loadBalancer.instance(instances);
         URI uri = serviceInstance.getUri();
         return restTemplate.getForObject(uri + "/loadbalance", String.class);
+    }
+
+    @GetMapping("/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject("http://localhost:8001/api/payment/zipkin", String.class);
     }
 }
