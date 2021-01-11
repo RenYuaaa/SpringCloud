@@ -1,5 +1,5 @@
 server:
-  port: 8802
+  port: 8803
 
 spring:
   application:
@@ -46,6 +46,6 @@ eureka:
     # 如果现在超过了5秒的间隔（默认是90秒）
     lease-expiration-duration-in-seconds: 5
     # 在信息列表时显示主机名称
-    instance-id: receive-8802
+    instance-id: receive-8803
     # 访问的路径变为IP地址
     prefer-ip-address: true

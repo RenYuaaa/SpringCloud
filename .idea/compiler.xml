@@ -20,6 +20,7 @@
         <module name="Consumer-Feign-Hystrix-Order80" />
         <module name="Config-Center" />
         <module name="Provider-Hystrix-Payment8001" />
+        <module name="RabbitMQ-Consumer-8803" />
         <module name="RabbitMQ-Consumer-8802" />
         <module name="Eureka" />
       </profile>
