@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Alibaba-Consumer-Order-83" />
         <module name="Feign-Consumer-Order" />
         <module name="Common" />
         <module name="Config-Client3355" />
+        <module name="Alibaba-Payment-Provider" />
         <module name="Consumer-Order" />
         <module name="Provider-Payment8002" />
         <module name="Consumer-Hystrix-Dashboard9001" />
@@ -20,6 +22,8 @@
         <module name="Consumer-Feign-Hystrix-Order80" />
         <module name="Config-Center" />
         <module name="Provider-Hystrix-Payment8001" />
+        <module name="Alibaba-Payment-Provider-9002" />
+        <module name="Alibaba-Config-Client-3377" />
         <module name="RabbitMQ-Consumer-8803" />
         <module name="RabbitMQ-Consumer-8802" />
         <module name="Eureka" />

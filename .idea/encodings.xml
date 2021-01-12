@@ -2,6 +2,10 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Config-Client-3377" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Consumer-Order-83" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Payment-Provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Payment-Provider-9002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Config-Center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Config-Client3355" charset="UTF-8" />
