@@ -14,3 +14,7 @@ spring:
         server-addr: localhost:8848
         # 指定yaml格式的配置
         file-extension: yaml
+        # 指定分组，如果dataId为：nacos-config-client-info.yaml，分组为DEV_GROUP, spring-profile-active为info
+        group: DEV_GROUP
+        # 指定命名空间
+#        namespace: 命名空间id
