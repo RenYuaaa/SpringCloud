@@ -2,29 +2,31 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Provider-Hystrix-Payment8001" />
+        <module name="Alibaba-Consumer-Order-83" />
+        <module name="Feign-Consumer-Order" />
         <module name="Common" />
+        <module name="Consumer-Hystrix-Dashboard9001" />
         <module name="Config-Client3355" />
         <module name="Alibaba-Payment-Provider" />
         <module name="Consumer-Order" />
-        <module name="Gateway9527" />
+        <module name="Provider-Payment8002" />
         <module name="Provider-Payment8001" />
         <module name="Config-Client3366" />
-        <module name="Provider-Payment8002" />
-        <module name="Consumer-Hystrix-Dashboard9001" />
-        <module name="Alibaba-Consumer-Order-83" />
-        <module name="RabbitMQ-Consumer-8803" />
+        <module name="Gateway9527" />
+        <module name="RabbitMQ-Provider-8801" />
+        <module name="Alibaba-Sentinel-Service-8401" />
+        <module name="Provider-Hystrix-Payment8001" />
         <module name="Consumer-Feign-Hystrix-Order80" />
         <module name="Config-Center" />
-        <module name="RabbitMQ-Provider-8801" />
+        <module name="Eureka-2" />
         <module name="Alibaba-Payment-Provider-9002" />
         <module name="Alibaba-Config-Client-3377" />
-        <module name="Feign-Consumer-Order" />
-        <module name="Eureka-2" />
+        <module name="RabbitMQ-Consumer-8803" />
         <module name="RabbitMQ-Consumer-8802" />
         <module name="Eureka" />
       </profile>
