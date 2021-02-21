@@ -32,6 +32,9 @@
         <module>Alibaba-Consumer-Order-83</module>
         <module>Alibaba-Config-Client-3377</module>
         <module>Alibaba-Sentinel-Service-8401</module>
+        <module>Provider-Payment-9003</module>
+        <module>Provider-Payment-9004</module>
+        <module>Alibaba-Consumer-Nacos-Order-84</module>
     </modules>
 
     <!-- jar包版本管理 -->
